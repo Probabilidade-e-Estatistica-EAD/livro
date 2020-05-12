@@ -1,0 +1,4 @@
+"0","table8 <- data.frame(summary(g)$coefficients)
+"
+"2","Error in summary(g) : object 'g' not found
+"

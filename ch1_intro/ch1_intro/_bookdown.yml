@@ -1,0 +1,12 @@
+book_filename: "ch1_intro"
+delete_merged_file: true
+language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabela '
+    eq: 'Equação '
+    def: 'Definição '
+    exm: 'Exemplo '
+    exr: 'Prática Orientada '
+  ui:
+    chapter_name: ""

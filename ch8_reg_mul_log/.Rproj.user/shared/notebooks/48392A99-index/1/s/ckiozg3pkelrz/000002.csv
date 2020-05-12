@@ -1,0 +1,6 @@
+"0","ggplot(data = email50, aes(x = num_char)) +  "
+"0","  theme(panel.border = element_rect(colour = ""black"", fill = NA, size = 1)) + "
+"0","  labs(x = 'Número de Caracteres', y = NULL) + "
+"0","  geom_histogram(fill = 'skyblue3', color = 'white', bins = 12) + "
+"0","  xlim(0, 70) + "
+"0","  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())"

@@ -1,0 +1,8 @@
+"0","teste_hip <- matrix(NA, ncol = 2, nrow = 2)"
+"0","teste_hip[1,] <- c(""ok"", ""Erro tipo I"")"
+"0","teste_hip[2,] <- c(""Erro tipo II"", ""ok"")"
+"0","rownames(teste_hip) <- c(""H0 verdadeiro"", ""H1 verdadeiro"")"
+"0","colnames(teste_hip) <- c(""Não rejeitamos H0"", ""Rejeitamos H0 em favor de H1"")"
+"0","  "
+"0","kable(teste_hip, align = ""c"", "
+"0","      caption = ""Quatro cenários diferentes para testes de hipóteses."")"

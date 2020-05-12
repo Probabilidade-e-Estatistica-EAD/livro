@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"`rownames<-`(`*tmp*`, value = c(\"Algoritmo de procura\", \"Contagens\"\n))","line_number":0}],"message":"Error in dimnames(x) <- dn : \n  length of 'dimnames' [1] not equal to array extent\n"}

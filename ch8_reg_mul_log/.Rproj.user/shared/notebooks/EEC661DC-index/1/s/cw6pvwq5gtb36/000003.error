@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"colnames(\"troca de emails prévia (não)\", \"troca de emails prévia (sim)\", \n    \"Total\")","line_number":0}],"message":"Error in if (do.NULL) NULL else if (nc > 0L) paste0(prefix, seq_len(nc)) else character() : \n  argument is not interpretable as logical\n"}

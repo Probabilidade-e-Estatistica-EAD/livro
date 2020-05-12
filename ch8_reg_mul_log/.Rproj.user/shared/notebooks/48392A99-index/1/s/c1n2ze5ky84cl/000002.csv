@@ -1,0 +1,6 @@
+"0","ggplot(data = countyComplete, "
+"0","       mapping = aes(x = housing_multi_unit, y = home_ownership)) +  "
+"0","  theme(panel.border = element_rect(colour = ""black"", fill = NA, size = 1)) + "
+"0","  labs(x = 'Porcentagem de Unidades em Estruturas de Multi-Unidades', "
+"0","       y = 'Proporção de Casa Própria') + "
+"0","  geom_point()"

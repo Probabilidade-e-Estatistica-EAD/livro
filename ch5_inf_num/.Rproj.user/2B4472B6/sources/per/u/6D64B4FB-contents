@@ -1,0 +1,23 @@
+set.seed(1)
+m <- 0; s <- 1
+X <- m + s * seq(-4, 4, 0.01)
+Y <- dnorm(X, m, s)
+
+gg   <- data.frame(X,Y)
+
+ggplot(data = gg, mapping = aes(x = X, y = Y)) + 
+  geom_path() +
+  geom_linerange(data = gg[gg$X >2,], 
+                 aes(X, ymin = 0, ymax = Y), colour="skyblue1", alpha = 0.6) + 
+  scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s)) + 
+  labs(x = NULL, y = NULL) + 
+  theme(axis.text = element_blank(), axis.ticks.y = element_blank(), 
+        axis.line.y = element_blank()) + geom_hline(yintercept = 0) +
+  annotate(geom = "text", x = 0, y = -0.02, label = ("null diff. = 0"), size = 3) + 
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = 0.4), linetype = "dashed") + 
+  annotate(geom = "text", x = 2, y = -0.02, label = "obs diff. = 0.025", size = 3) + 
+  geom_segment(aes(x = 2, y = 0, xend = 2, yend = 0.055), linetype = "dashed") + 
+  annotate(geom = "text", x = 2.3, y = 0.15, label = "p-valor de \n 0.027", size = 3, color = "skyblue3") + 
+  geom_segment(aes(x = 2.3, xend = 2.3, y = 0.11, yend = 0.05),
+               arrow = arrow(length = unit(0.1, "cm")), color = "skyblue3") + 
+  annotate(geom = "text", x = 0, y = 0.15, label = "0.973", size = 6)

@@ -1,0 +1,5 @@
+"0","rownames(table6) <- c('Condição', 'Foto', 'Rodas', 'R² adj')
+"
+"2","Error in `.rowNamesDF<-`(x, value = value) : 
+  'row.names' com comprimento inválido
+"

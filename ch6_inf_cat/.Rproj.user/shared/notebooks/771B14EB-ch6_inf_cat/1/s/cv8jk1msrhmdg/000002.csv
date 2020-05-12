@@ -1,0 +1,5 @@
+"0","rownames(desc8) <- c('Algoritmo de procura', 'Contagens')
+"
+"2","Error in dimnames(x) <- dn : 
+  length of 'dimnames' [1] not equal to array extent
+"

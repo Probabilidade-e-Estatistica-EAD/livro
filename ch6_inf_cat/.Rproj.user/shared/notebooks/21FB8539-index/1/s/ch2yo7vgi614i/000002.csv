@@ -1,0 +1,5 @@
+"0","colnames('Obama','Democratas','Republicanos','Total')
+"
+"2","Error in colnames(""Obama"", ""Democratas"", ""Republicanos"", ""Total"") : 
+  unused argument (""Total"")
+"

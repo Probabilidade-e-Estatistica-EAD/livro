@@ -1,0 +1,7 @@
+"0","tab10 <- rbind(tab9, 
+               c(0, 75.35, 42.50, 117.85), 
+               c(-117.85, 19.15, 52.15),
+               c(13888.62, 366.72, 2719.62),
+               c(2777.7, 201.7, 679.9, 3659.3))
+"
+"2","number of columns of result is not a multiple of vector length (arg 3)"

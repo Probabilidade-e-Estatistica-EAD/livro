@@ -1,0 +1,22 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: none 
+  config:
+    toc:
+      collapse: subsubsection
+      scroll_highlight: yes
+      search: yes
+      before: |
+        <li><a href="./">Fundamentos para inferência</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    toolbar:
+      position: fixed
+  download: ["html"]
+  fontsettings:
+    theme: white
+    family: serif
+    size: 1
+bookdown::html_book:
+    css: toc.css
+documentclass: book

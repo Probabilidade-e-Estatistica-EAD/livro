@@ -1,0 +1,6 @@
+"0","cont <- matrix(c('19', '12', '6', '2', '3', '5', '···', '0', '1'), nrow = 1)"
+"0","rownames(cont) <- c('contagem')"
+"0","colnames(cont) <- c('0-5', '5-10', '10-15', '15-20', "
+"0","                    '20-25', '25-30', '···', '55-60', '60-65')"
+"0","knitr::kable(cont , align = 'c', "
+"0","              caption = 'As contagens para os dados número de caracteres em forma de intervalos')"

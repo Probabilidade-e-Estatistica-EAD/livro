@@ -1,0 +1,12 @@
+book_filename: "ch6_inf_cat"
+delete_merged_file: true
+language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabela '
+    eq: 'Equação '
+    def: 'Definição '
+    exm: 'Exemplo '
+    exr: 'Prática Orientada '
+  ui:
+    chapter_name: ""

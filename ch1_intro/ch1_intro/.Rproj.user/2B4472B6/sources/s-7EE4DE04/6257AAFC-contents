@@ -1,0 +1,14 @@
+ggplot(data = email50, aes(x = num_char, y = rep(0, times = nrow(email50)))) +  
+  theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + 
+  labs(x = 'Número de Caracteres', y = NULL) + 
+  ylim(0,1) + 
+  xlim(m-(3*s), 65) + 
+  geom_rect(mapping = aes(xmin=m-(3*s), xmax=m+(3*s), ymin=0, ymax=1), 
+            fill = "gray48", alpha = 0.5) +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank()) + 
+  geom_rect(mapping = aes(xmin = m - (2*s), xmax = m + (2*s), ymin = 0, ymax = 1),
+            fill = "gray28", alpha = 0.5) +
+  geom_rect(mapping = aes(xmin = m-s, xmax = m + s, ymin=0, ymax=1), 
+            fill = "gray60") +
+  geom_point(color = 'skyblue3', size = 3) + 
+  geom_vline(xintercept = 11.6, color = 'red', linetype = 'dashed') 

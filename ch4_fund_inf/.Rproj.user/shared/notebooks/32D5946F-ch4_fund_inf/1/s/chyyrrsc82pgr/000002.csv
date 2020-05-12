@@ -1,0 +1,6 @@
+"0","data(marioKart)"
+"0","d <- marioKart[marioKart$totalPr < 100,]"
+"0","d <- d$totalPr[d$wheels == 1]"
+"0","ggplot() + "
+"0","  geom_histogram(aes(d), bins = 12, color = ""white"", fill = ""skyblue2"") + "
+"0","  labs(x = ""Preço total do leilão (US$)"", y = ""Frequência"")"

@@ -1,0 +1,4 @@
+"0","ggplot(data = email50) + "
+"0","  theme(panel.border = element_rect(colour = ""black"", fill = NA, size = 1)) +"
+"0","  labs(x = 'Número de Caracteres', y = 'Quebra de Linhas') + "
+"0","  geom_point(aes(x = num_char, y = line_breaks), color = 'skyblue3')"

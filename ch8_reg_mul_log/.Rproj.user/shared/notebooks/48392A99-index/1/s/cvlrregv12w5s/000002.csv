@@ -1,0 +1,4 @@
+"0","ggplot(data = MLB) + "
+"0","  theme(panel.border = element_rect(colour = ""black"", fill=NA, size=1)) +"
+"0","  geom_histogram(aes(log(salary/1000)), fill = 'skyblue3', color = 'white') + "
+"0","  labs(x = 'log(Salário) (em milhões de dólares)', y = NULL)"

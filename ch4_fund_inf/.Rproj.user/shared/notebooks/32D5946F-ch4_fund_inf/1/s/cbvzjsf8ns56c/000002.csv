@@ -1,0 +1,28 @@
+"0","require(ggplot2)"
+"0","alt <- ggplot(data = dados_samp, mapping = aes(x = altura)) + "
+"0","  labs(x = ""Altura (em metros)"", y = NULL) + "
+"0","  geom_histogram(bins = 12, color = ""white"", fill = ""skyblue2"")"
+"0","pes <- ggplot(data = dados_samp, mapping = aes(x = peso)) + "
+"0","  labs(x = ""Peso (em quilogramas)"", y = NULL) + "
+"0","  geom_histogram(bins = 12, color = ""white"", fill = ""skyblue2"")"
+"0","ati <- ggplot(data = dados_samp, mapping = aes(x = ativo)) + "
+"0","  labs(x = ""NÃºm. de dias fisicamente ativos por 60+ minutos \n "
+"0","       nos Ãºltimos 7 dias"", y = NULL) + "
+"0","  geom_histogram(bins = 8, color = ""white"", fill = ""skyblue2"")"
+"0","lev <- ggplot(data = dados_samp, mapping = aes(x = levantamento)) + "
+"0","  labs(x = ""NÃºm.  de  dias  de  treinamento  de  forÃ§a  \n "
+"0","       (levantamento  de  peso)  nos Ãºltimos 7 dias"", y = NULL) + "
+"0","  geom_histogram(bins = 8, color = ""white"", fill = ""skyblue2"")"
+"0","require(gridExtra)"
+"2","Carregando pacotes exigidos: gridExtra
+"
+"2","
+Attaching package: ‘gridExtra’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    combine
+
+"
+"0","grid.arrange(alt, pes, ati, lev, ncol = 2)"

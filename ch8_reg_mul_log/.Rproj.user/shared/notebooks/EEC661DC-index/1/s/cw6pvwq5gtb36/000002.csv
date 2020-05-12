@@ -1,0 +1,5 @@
+"0","colnames('troca de emails prévia (não)', 'troca de emails prévia (sim)', 'Total')
+"
+"2","Error in if (do.NULL) NULL else if (nc > 0L) paste0(prefix, seq_len(nc)) else character() : 
+  argument is not interpretable as logical
+"

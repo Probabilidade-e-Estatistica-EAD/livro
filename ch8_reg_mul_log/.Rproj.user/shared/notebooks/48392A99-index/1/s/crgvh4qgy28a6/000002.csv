@@ -1,0 +1,7 @@
+"0","ggplot(data = email50, aes(x = num_char, y = rep(0, times = nrow(email50)))) +  "
+"0","  theme(panel.border = element_rect(colour = ""black"", fill = NA, size = 1)) + "
+"0","  labs(x = 'Número de Caracteres', y = NULL) + "
+"0","  geom_point(color = 'skyblue3', size = 2) + "
+"0","  xlim(0, 70) + ylim(0,1) + "
+"0","  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank()) + "
+"0","  geom_point(aes(x = 11.6, y = 0), color = 'red', size = 2)"

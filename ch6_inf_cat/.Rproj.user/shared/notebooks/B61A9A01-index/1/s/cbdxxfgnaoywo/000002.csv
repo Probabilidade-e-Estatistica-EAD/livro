@@ -1,0 +1,5 @@
+"0","gg <- data.frame(X = seq(-2, 3, 0.01),
+                 Y = dnorm(X, 0.5, sqrt(0.5)))
+"
+"2","Error in dnorm(X, 0.5, sqrt(0.5)) : object 'X' not found
+"

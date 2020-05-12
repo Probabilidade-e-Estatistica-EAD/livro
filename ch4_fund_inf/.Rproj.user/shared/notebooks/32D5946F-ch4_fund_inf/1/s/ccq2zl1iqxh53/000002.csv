@@ -1,0 +1,42 @@
+"0","library(openintro)"
+"2","Please visit openintro.org for free statistics materials
+"
+"2","
+Attaching package: ëopenintroí
+
+"
+"2","The following object is masked from ëpackage:ggplot2í:
+
+    diamonds
+
+"
+"2","The following objects are masked from ëpackage:datasetsí:
+
+    cars, trees
+
+"
+"0","data(yrbss)"
+"0","require(dplyr)"
+"2","Carregando pacotes exigidos: dplyr
+"
+"2","package ëdplyrí was built under R version 3.6.1"
+"2","
+Attaching package: ëdplyrí
+
+"
+"2","The following objects are masked from ëpackage:statsí:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ëpackage:baseí:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","dados = select(yrbss, age, gender, grade, height, weight, helmet_12m,"
+"0","               physically_active_7d, strength_training_7d)"
+"0","colnames(dados) = c('idade', 'genero', 'grau', 'altura', 'peso', "
+"0","                    'capacete', 'ativo', 'levantamento')"
+"0","kable(head(dados, 5), "
+"0","      caption = ""Cinco casos do conjunto de dados yrbss. Algumas observa√ß√µes est√£o em branco, pois h√° dados ausentes. Por exemplo, a altura e o peso dos alunos 1 e 2 est√£o ausentes."")"

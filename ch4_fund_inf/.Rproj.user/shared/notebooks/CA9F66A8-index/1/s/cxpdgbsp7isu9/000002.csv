@@ -1,0 +1,10 @@
+"0","require(ggplot2)
+"
+"2","Carregando pacotes exigidos: ggplot2
+"
+"2","package ‘ggplot2’ was built under R version 3.6.1"
+"2","Warning message:
+"
+"2","In readRDS(path) :"
+"2"," unknown input format
+"

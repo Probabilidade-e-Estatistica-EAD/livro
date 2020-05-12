@@ -1,0 +1,8 @@
+"0","bar_plot <- data.frame(quantidade = c(1532, 760, 338, 194, 74, 33, 17,
+                  1569, 734, 343, 161, 75, 35, 31), 
+                  tipo = sort(rep(c('Observado', 'Esperado'), 7), decreasing = TRUE), 
+                  dias = rep(c(1:6, '7+'), 7)) 
+"
+"2","Error in data.frame(quantidade = c(1532, 760, 338, 194, 74, 33, 17, 1569,  : 
+  arguments imply differing number of rows: 14, 49
+"

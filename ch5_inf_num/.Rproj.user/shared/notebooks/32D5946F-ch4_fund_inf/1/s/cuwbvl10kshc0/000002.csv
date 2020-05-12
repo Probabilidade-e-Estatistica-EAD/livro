@@ -1,0 +1,3 @@
+"0","ggplot() + geom_histogram(aes(x), bins = 14, "
+"0","                          color = ""white"", fill = ""skyblue3"") + "
+"0","  labs(y = ""Frequência"", x = ""Sono noturno (horas)"")"

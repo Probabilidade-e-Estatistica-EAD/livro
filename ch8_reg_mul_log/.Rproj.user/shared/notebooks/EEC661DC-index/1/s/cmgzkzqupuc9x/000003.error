@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"data.frame(summary(g)$coefficients)","line_number":0},{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"summary(g)","line_number":0}],"message":"Error in summary(g) : object 'g' not found\n"}

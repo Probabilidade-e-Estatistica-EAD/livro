@@ -1,0 +1,5 @@
+"0","colnames(table7) <- c('texto', 'HTML', 'Total')
+"
+"2","Error in dimnames(x) <- dn : 
+  length of 'dimnames' [2] not equal to array extent
+"

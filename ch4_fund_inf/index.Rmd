@@ -156,7 +156,7 @@ grid.arrange(alt, pes, ati, lev, ncol = 2)
 
 Gostaríamos de estimar quatro características dos alunos do ensino médio em YRBSS usando a amostra.
 
-+ **[(1)]** Qual é a altura média dos alunos do ensino médio do YRBSS??
++ **[(1)]** Qual é a altura média dos alunos do ensino médio do YRBSS?
 
 + **[(2)]** Qual é o peso médio dos alunos do ensino médio do YRBSS?
 
@@ -199,7 +199,7 @@ aux = matrix(c(c(mean(dados$ativo, na.rm = TRUE),
 rownames(aux) <- c("Média", "Mediana", "Desvio Padrão")
 colnames(aux) <- c("Parâmetro", "Estimativa")
 
-kable(aux,
+knitr::kable(aux,
       caption = "Estimativas pontuais e valores de parâmetros para a variável 'ativo'. Os parâmetros foram obtidos pelo cálculo da média, mediana e desvio padrão para todos os respondentes do YRBSS.",
       align = "c", digits = 4)
 ```
@@ -753,7 +753,7 @@ teste_hip[2,] <- c("Erro tipo II", "ok")
 rownames(teste_hip) <- c("H0 verdadeiro", "H1 verdadeiro")
 colnames(teste_hip) <- c("Não rejeitamos H0", "Rejeitamos H0 em favor de H1")
   
-kable(teste_hip, align = "c", 
+knitr::kable(teste_hip, align = "c", 
       caption = "Quatro cenários diferentes para testes de hipóteses.")
 ```
 
@@ -1082,7 +1082,7 @@ Como o p-valor é tão pequeno - especificamente, menor que $\alpha = 0.01$ -- i
 
 ### Teste de hipóteses de dois lados com p-valores
 
-Consideramos agora como calcular um p-valor para um teste bilateral. Nos testes unilaterais, sombreamos a cauda única na direção da hipótese alternativa. Por exemplo, quando a alternativa tinha a forma $\mu > 7$, então o p-valor foi representado pela cauda superior (Figura \@ref(fig:ValueOneSidedSleepStudyExplained)). Quando a alternativa era $\mu<46.99$, o p-valor era a cauda inferior. Em um teste bilateral, __somamos duas caudas__ porque as evidências em qualquer direção são favoráveis a $H_1$.
+Consideramos agora como calcular um p-valor para um teste bilateral. Nos testes unilaterais, sombreamos a cauda única na direção da hipótese alternativa. Por exemplo, quando a alternativa tinha a forma $\mu > 7$, então o p-valor foi representado pela cauda superior (Figura \@ref(fig:pValueOneSidedSleepStudyExplained)). Quando a alternativa era $\mu<46.99$, o p-valor era a cauda inferior. Em um teste bilateral, __somamos duas caudas__ porque as evidências em qualquer direção são favoráveis a $H_1$.
 
 ***
 ```{exercise}

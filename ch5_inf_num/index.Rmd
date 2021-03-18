@@ -1562,7 +1562,7 @@ Uma ANOVA foi conduzida para os dados intermediários, e os resultados resumidos
 
 ***
 
-```{r}
+```{r anovaSummaryTableForMidtermData}
 aj <- anova(lm(m1 ~ lecture, classData))
 
 knitr::kable(aj, align = "c", caption = 'Tabela resumo ANOVA para os dados de exames parciais.')

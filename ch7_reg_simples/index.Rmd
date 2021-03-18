@@ -189,12 +189,12 @@ data(possum)
 
 ggplot(data = possum) + 
   theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + 
-  geom_point(aes(possum$totalL, possum$headL), color = 'skyblue3') + 
+  geom_point(aes(totalL, headL), color = 'skyblue3') + 
   labs(x = 'Comprimento Total (cm)', y = 'Comprimento da Cabeça (cm)') + 
   geom_point(aes(89, 94.1), color = 'red') +
-  geom_segment(aes(x = 89, y = min(possum$headL), xend = 89, yend = 94.1), 
+  geom_segment(aes(x = 89, y = min(headL), xend = 89, yend = 94.1), 
                linetype = 'dashed', color = 'red') +
-  geom_segment(aes(x = min(possum$totalL), y = 94.1, xend = 89, yend = 94.1), 
+  geom_segment(aes(x = min(totalL), y = 94.1, xend = 89, yend = 94.1), 
                linetype = 'dashed', color = 'red')
   
 
@@ -273,7 +273,7 @@ for(i in 1:3){
 
 ggplot() + 
   theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + 
-  geom_point(data = possum, aes(possum$totalL, possum$headL), color = 'skyblue3') + 
+  geom_point(data = possum, aes(totalL, headL), color = 'skyblue3') + 
   labs(x = 'Comprimento Total (cm)', y = 'Comprimento da Cabeça (cm)') + 
   geom_abline(intercept = 41, slope = 0.59) + 
   geom_point(aes(possum$totalL[these] + rnorm(3,0,0.02),
@@ -908,13 +908,13 @@ ggplot() +
 Para incorporar a variável de condição de jogo em uma equação de regressão, devemos converter as categorias em uma forma numérica. Faremos isso usando uma __variável indicadora__ chamada `cond_nova`, que leva valor 1 quando o jogo é novo e 0 quando o jogo é usado. Usando esta variável indicadora, o modelo linear pode ser escrito como
 
 \begin{align*}
-\widehat{preço} = \beta_0 + \beta_1 \times \text{\var{cond\_\hspace{0.3mm}nova}}
+\widehat{preço} = \beta_0 + \beta_1 \times cond\_\hspace{0.3mm}nova
 \end{align*}
 
-O modelo ajustado está resumido na Tabela \@ref(fig:marioKartNewUsedRegrSummary), e o modelo com seus parâmetros estimados é dado como
+O modelo ajustado está resumido na Tabela \@ref(tab:marioKartNewUsedRegrSummary), e o modelo com seus parâmetros estimados é dado como
 
 \begin{align*}
-\widehat{preço} = 42.87 + 10.90 \times \text{\var{cond\_\hspace{0.3mm}nova}}
+\widehat{preço} = 42.87 + 10.90 \times cond\_\hspace{0.3mm}nova
 \end{align*}
 
 Para preditores categóricos com apenas dois níveis, a suposição de linearidade será sempre satisfeita. No entanto, devemos avaliar se os resíduos em cada grupo são aproximadamente normais e têm variância aproximadamente igual. Como pode ser visto na Figura \@ref(fig:marioKartNewUsed), ambas as condições são razoavelmente satisfeitas pelos dados do leilão.

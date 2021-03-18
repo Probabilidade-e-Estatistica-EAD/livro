@@ -156,7 +156,7 @@ Embora ainda não tenhamos nossas ferramentas estatísticas para resolver totalm
 
 **Seja cuidadoso:** não generalizamos os resultados deste estudo para todos os pacientes e todos os *stents*. Este estudo analisou pacientes com características muito específicas que se voluntariaram para fazer parte deste estudo e que podem não ser representativos de todos os pacientes com AVC. Além disso, existem muitos tipos de *stents* e este estudo considerou apenas o *stent Wingspan* auto-expansível (Boston Scientific). No entanto, este estudo nos deixa uma lição importante: devemos manter nossos olhos abertos para surpresas.
 
-## Noções básicas de dados
+## Noções básicas de dados {#dataBasics}
 
 Apresentação eficaz e descrição dos dados é um primeiro passo na maioria das análises. Esta seção apresenta uma estrutura para organizar dados, bem como alguma terminologia que será usada ao longo deste livro.
 
@@ -1639,7 +1639,7 @@ A distribuição dos preços dos veículos tende a ser bem distorcida, com algun
 
 Quando os dados são muito distorcidos, às vezes os transformamos para que sejam mais fáceis de modelar. Considere o histograma dos salários dos jogadores de beisebol da Major League de 2010, que é mostrado na Figura \@ref(fig:histMLBSalariesReg).
 
-```{r , fig.cap = 'Histograma dos salários dos jogadores da MLB em 2010, em milhões de dólares'}
+```{r histMLBSalariesReg, fig.cap = 'Histograma dos salários dos jogadores da MLB em 2010, em milhões de dólares'}
 
 data(MLB)
 
@@ -1650,7 +1650,7 @@ ggplot(data = MLB) +
 
 ```
 
-```{r histMLBSalariesLog, histMLBSalariesReg, fig.cap = 'Histograma dos salários dos jogadores da MLB transformados em log para 2010.'}
+```{r histMLBSalariesLog, fig.cap = 'Histograma dos salários dos jogadores da MLB transformados em log para 2010.'}
 
 ggplot(data = MLB) + 
   theme(panel.border = element_rect(colour = "black", fill=NA, size=1)) +
@@ -1820,7 +1820,7 @@ Essa pessoa estaria interessada em saber como a proporção de spam é alterada 
 
 Se gerarmos as proporções da coluna, poderemos ver que uma fração maior de e-mails de texto sem formatação é spam ($209/1195 = 17.5\%$) do que em comparação com e-mails em HTML ($158/2726 = 5.8\%$). Esta informação por si só é insuficiente para classificar um email como spam ou não spam, pois mais de 80\% dos emails com texto simples não são spam. No entanto, quando combinamos cuidadosamente essas informações com muitas outras características, como `número` e outras variáveis, temos uma chance razoável de sermos capazes de classificar alguns e-mails como spam ou não spam.
 
-```{r}
+```{r emailSpamHTMLTableTotals}
 table11 <- addmargins(table(email$spam, email$format))
 colnames(table11) <- c('texto', 'HTML', 'Total')
 rownames(table11) <- c('Não Spam', 'Spam', 'Total')

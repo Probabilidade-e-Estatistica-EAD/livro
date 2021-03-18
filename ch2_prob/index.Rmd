@@ -974,7 +974,7 @@ knitr::kable(tab5, align = 'c',
 
 ***
 ```{exercise}
-Verifique que a Tabela \@ref(tab:amilyCollegeDistribution) representa uma distribuição de probabilidade: os eventos são separados, todas as probabilidades são não-negativas e as probabilidades somam 1.^[Cada uma das quatro combinações de resultados é disjunta, todas as probabilidades são de fato não-negativas e a soma das probabilidades é $0.29 + 0.06 + 0.27 + 0.38 = 1.00 $.]
+Verifique que a Tabela \@ref(tab:FamilyCollegeDistribution) representa uma distribuição de probabilidade: os eventos são separados, todas as probabilidades são não-negativas e as probabilidades somam 1.^[Cada uma das quatro combinações de resultados é disjunta, todas as probabilidades são de fato não-negativas e a soma das probabilidades é $0.29 + 0.06 + 0.27 + 0.38 = 1.00 $.]
 ```
 
 ***
@@ -1057,7 +1057,7 @@ A fração dessas probabilidades é um exemplo da fórmula geral para probabilid
   
 \begin{align}
 P(A | B) = \frac{P(A\text{ e }B)}{P(B)}
-(\#eq:condProbE)
+(\#eq:condProbEq)
 \end{align}
 </div>
 
@@ -1179,7 +1179,7 @@ Entre os 96,08\% de pessoas que não foram inoculadas, 85,88\% sobreviveram:
 P(\text{resultado = viveu e inoculado = não}) = 0,8588 \times 0,9608 = 0,8251
 \end{eqnarray*}
 
-Isso é equivalente à regra geral de multiplicação. Podemos confirmar essa probabilidade na Tabela \@ref(fig:smallpoxProbabilityTable) na intersecção de não e viveu (com um pequeno erro de arredondamento).
+Isso é equivalente à regra geral de multiplicação. Podemos confirmar essa probabilidade na Tabela \@ref(tab:smallpoxProbabilityTable) na intersecção de não e viveu (com um pequeno erro de arredondamento).
 ```
 
 ***
@@ -2009,7 +2009,7 @@ Você deveria ter descoberto que Leonard espera um ganho positivo na Prática Or
 
 ### Variabilidade em combinações lineares de variáveis aleatórias
 
-A quantificação do resultado médio de uma combinação linear de variáveis aleatórias é útil, mas também é importante ter alguma noção da incerteza associada ao resultado total dessa combinação de variáveis aleatórias. O ganho ou perda líquida esperada da carteira de ações da Leonard foi considerado na Prática Orientada \@ref(fig:expectedChangeInLeonardsStockPortfolio). No entanto, não houve discussão quantitativa da volatilidade desta carteira. Por exemplo, enquanto o ganho médio mensal pode ser de aproximadamente \$134 de acordo com os dados, esse ganho não é garantido. A Figura \@ref(fig:changeInLeonardsStockPortfolioFor36Months) mostra as mudanças mensais em uma carteira como a da Leonard durante os 36 meses de 2009 a 2011. Os ganhos e perdas variam muito, e quantificar essas flutuações é importante quando se investe em ações.
+A quantificação do resultado médio de uma combinação linear de variáveis aleatórias é útil, mas também é importante ter alguma noção da incerteza associada ao resultado total dessa combinação de variáveis aleatórias. O ganho ou perda líquida esperada da carteira de ações da Leonard foi considerado na Prática Orientada \@ref(exr:expectedChangeInLeonardsStockPortfolio). No entanto, não houve discussão quantitativa da volatilidade desta carteira. Por exemplo, enquanto o ganho médio mensal pode ser de aproximadamente \$134 de acordo com os dados, esse ganho não é garantido. A Figura \@ref(fig:changeInLeonardsStockPortfolioFor36Months) mostra as mudanças mensais em uma carteira como a da Leonard durante os 36 meses de 2009 a 2011. Os ganhos e perdas variam muito, e quantificar essas flutuações é importante quando se investe em ações.
 
 ```{r changeInLeonardsStockPortfolioFor36Months, fig.cap = 'A mudança em um portfólio como o de Leonard para os 36 meses de 2009 a 2011, em que $6000 está no estoque do Google e $2000 está no da Exxon Mobil.'}
 

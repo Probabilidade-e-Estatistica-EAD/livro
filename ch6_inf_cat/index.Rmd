@@ -900,7 +900,7 @@ desc6 <- matrix(c('Observado', 1532, 760, 338, 194, 74, 33, 17, 2948),
                 nrow = 1, ncol = 9)
 colnames(desc6) <- c('Dias', 1:6, '7+', 'Total')
 
-knitr::kable(desc6, align = 'c')
+knitr::kable(desc6, align = 'c', caption = "Distribuição observada dos dias de espera até que ocorra um dia de negociação positivo")
 ```
 
 Consideramos quantos dias é preciso esperar até observar um dia em __alta__ no índice de ações S\&P500. Se a atividade de estoque fosse independente de um dia para o outro e a probabilidade de um dia de negociação positivo fosse constante, esperaríamos que esse tempo de espera seguisse uma _distribuição geométrica_. Podemos organizar isso em uma estrutura de hipóteses:
@@ -1497,7 +1497,7 @@ knitr::kable(cpr_small, align = 'c', caption = ' Resultados simulados para o est
 
 ***
 ```{exercise, label = 'exerciseComputingDifferenceForCPRStudyInSmallSampleSectionFake1'}
-Qual é a diferença nas taxas de sobrevivência entre os dois grupos falsos na Tabela \@ref(tab:resultsForCPRStudyInSmallSampleSectionFake1)? Como isso se compara aos 13\% observados nos grupos reais?^[A diferença é $\hat{p}_{t, falso} - \hat{p}_{c, falso} = \frac{10}{40} - \frac{15}{50} = -0.05$, que está mais próximo do valor nulo $p_0 = 0$ do que o que observamos.]
+Qual é a diferença nas taxas de sobrevivência entre os dois grupos falsos na Tabela \@ref(tab:resultsForCPRStudyInSmallSampleSectionFake)? Como isso se compara aos 13\% observados nos grupos reais?^[A diferença é $\hat{p}_{t, falso} - \hat{p}_{c, falso} = \frac{10}{40} - \frac{15}{50} = -0.05$, que está mais próximo do valor nulo $p_0 = 0$ do que o que observamos.]
 ```
 
 ***
@@ -1510,7 +1510,7 @@ A diferença calculada na Prática Orientada \@ref(exr:exerciseComputingDifferen
 
 ### Distribuição nula para a diferença em duas proporções
 
-Construímos uma aproximação para a distribuição nula criando repetidamente tabelas como a mostrada na Tabela \@ref(tab:resultsForCPRStudyInSmallSampleSectionFake1) e calcular as diferenças de amostra. A distribuição nula de 10.000 simulações é mostrada na Figura \@ref(fig:pValueCPRStudySmallSampleAnalysisInSmallSampleSection).
+Construímos uma aproximação para a distribuição nula criando repetidamente tabelas como a mostrada na Tabela \@ref(tab:resultsForCPRStudyInSmallSampleSectionFake) e calcular as diferenças de amostra. A distribuição nula de 10.000 simulações é mostrada na Figura \@ref(fig:pValueCPRStudySmallSampleAnalysisInSmallSampleSection).
 
 ```{r pValueCPRStudySmallSampleAnalysisInSmallSampleSection, fig.cap = 'Uma aproximação da distribuição nula da estimativa pontual. O p-valor é o dobro da área da cauda a direita.'}
 set.seed(1)

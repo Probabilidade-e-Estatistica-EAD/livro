@@ -877,7 +877,7 @@ O p-valor para esta estatística de teste é encontrado observando a cauda super
 Não verificar as condições pode afetar as taxas de erro do teste.
 </div>
 
-###  Avaliando a qualidade do ajuste para uma distribuição
+###  Avaliando a qualidade do ajuste para uma distribuição qui-quadrado
 
 Podemos aplicar nossa nova estrutura de teste de qui-quadrado ao segundo problema nesta seção: avaliar se um determinado modelo estatístico ajusta um conjunto de dados. Retornos diários das ações da S\&P500 para 1990-2011 pode ser usado para avaliar se a atividade de estoque a cada dia é independente do comportamento da ação nos dias anteriores. Isso soa como uma questão muito complexa, e é, mas um teste do qui-quadrado pode ser usado para estudar o problema. Vamos rotular cada dia como __Alta__ ou __Baixa__ dependendo se o mercado estava em alta ou baixa naquele dia. Por exemplo, considere as seguintes alterações no preço, seus novos rótulos de para cima e para baixo e, em seguida, o número de dias que devem ser observados antes de cada dia em __Alta__:
 

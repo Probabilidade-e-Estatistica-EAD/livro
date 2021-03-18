@@ -903,26 +903,36 @@ O conjunto de dados com 400 observações tem um histograma que se assemelha mui
 
 Observe que os histogramas parecem mais normais à medida que o tamanho da amostra aumenta, e o gráfico de probabilidade normal se torna mais reto e mais estável. Pela Figura \@ref(fig:histn) é possível notar o comportamento do histograma conforme aumentamos o tamanho da amostra e como seu comportamento vai ficando mais parecido com o de uma distribuição normal.
 
-```{r histn, fig.cap = "Histogramas simulados para dados normalmente distribuídos conforme o tamanho da amostra aumenta", fig.height=5, out.height='50%'}
+```{r, fig.height=5, out.height='50%', results = FALSE}
 library(gganimate)
+library(magick)
+
 set.seed(1)
 tres <- data.frame(obs <- c(rnorm(40), rnorm(100), rnorm(400), rnorm(1000)), 
            n <- c(rep(40, 40), rep(100, 100), rep(400, 400), rep(1000, 1000)))
 
 colnames(tres) <- c("obs", "n")
 
-ggplot(tres, aes(x = obs, fill = n)) +
+anim <- ggplot(tres, aes(x = obs, fill = n)) +
   geom_histogram(aes(y = ..density..), bins = 10, color = "white") + 
   scale_x_continuous(breaks = seq(-4, 4, 1)) + 
   scale_fill_gradient(low = "#E6205F", high = "#EAB217") + 
   theme(axis.ticks.y = element_blank(), 
         axis.text.y = element_blank(), legend.position = 'none') + 
-  # Here comes the gganimate specific bits
+  # Especifico do gganimate
   labs(title = 'Tamanho da amostra: {frame_time}', x = ' ', y = ' ') +
   transition_time(as.integer(n)) +
   ease_aes('linear') + 
   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+
+animate(anim, renderer = magick_renderer())
+anim_save("images/c3/anim.gif")
 ```
+
+```{r histn, fig.cap = "Histogramas simulados para dados normalmente distribuídos conforme o tamanho da amostra aumenta"}
+knitr::include_graphics("images/c3/anim.gif")
+```
+
 
 ```{example}
 As alturas dos jogadores da NBA são normalmente distribuídas? Considere todos os 435 jogadores da NBA da temporada 2008-09 apresentados na Figura \@ref(fig:nbaNormal).^[Esses dados foram coletados do site da [NBA](www.nba.com)].

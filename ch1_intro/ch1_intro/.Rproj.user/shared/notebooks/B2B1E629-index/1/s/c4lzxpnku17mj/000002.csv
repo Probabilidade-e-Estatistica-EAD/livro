@@ -1,7 +1,0 @@
-"0","knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = TRUE, cache = TRUE, "
-"0","                      fig.align = ""center"", out.width='80%', out.height='20%', fig.height=2)"
-"0","require(ggplot2)"
-"2","Carregando pacotes exigidos: ggplot2
-"
-"2","package ‘ggplot2’ was built under R version 3.6.1"
-"0","theme_set(theme_gray())"

@@ -1,7 +1,0 @@
-"0","ggplot(data = data.frame(x = c(-3, 33)), aes(x)) + "
-"0","  stat_function(fun = dnorm, n = 10001, args = list(mean = 0, sd = 1), size = 1, color = ""#EAB217"") + "
-"0","  stat_function(fun = dnorm, n = 10001, args = list(mean = 19, sd = 4), size = 1, color = ""#E6205F"") + "
-"0","  scale_x_continuous(breaks = seq(-3, 33, 4)) + "
-"0","  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank()) + "
-"0","  labs(x = NULL, y = NULL) + "
-"0","  geom_hline(yintercept=0, colour=""white"", size = 1)"

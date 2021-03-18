@@ -340,14 +340,13 @@ knitr::kable(table5, digits = 3,
 
 g <- lm(totalPr ~ cond + stockPhoto + wheels, data = d)
 
-table6 <- data.frame(summary(g)$coefficients)
+table6 <- data.frame(round(summary(g)$coefficients,3))
 colnames(table6) <- colnames(table5)
 table6[5,] <- c(0.7128, '', '', '')
 rownames(table6) <- c('(Intercepto)', 'Condição', 'Foto', 'Rodas', 'R² adj')
 
 
-knitr::kable(table6, digits = 3, 
-             caption = 'O ajuste para o modelo de regressão para preditores condição, foto e rodas.')
+knitr::kable(table6, caption = 'O ajuste para o modelo de regressão para preditores condição, foto e rodas.')
 ```
 
 ```{example}

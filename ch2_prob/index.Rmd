@@ -342,7 +342,7 @@ Na Prática Orientada \@ref(exr:exerExaminingDisjointSetsABD), você confirmou q
 
 ***
 
-###Probabilidades quando os eventos não são disjuntos
+### Probabilidades quando os eventos não são disjuntos
 
 Vamos considerar cálculos para dois eventos que não são disjuntos no contexto de um __baralho padrão de 52 cartas__. Se você não estiver familiarizado com as cartas em um baralho regular, consulte a nota de rodapé.^[As 52 cartas são divididas em quatro naipes: $\clubsuit$ (paus), $\diamondsuit$ (ouros), $\heartsuit$ (copas) e $\spadesuit$ (espadas). Cada naipe tem suas 13 cartas rotulados: $2, 3, \dots, 10, J (valete), Q (rainha), K (rei), e A (ás)$. Assim, cada carta é uma combinação única de um naipe e um rótulo, por exemplo 4$\heartsuit$ e J$\clubsuit$. As 12 cartas representadas pelos valetes, rainhas e reis são chamadas figuras. As cartas que são $\diamondsuit$ ou $\heartsuit$ são tipicamente vermelhas enquanto os outros dois naipes são tipicamente de cor preta.
 

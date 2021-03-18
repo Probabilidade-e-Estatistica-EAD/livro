@@ -1718,7 +1718,7 @@ Qual é a receita média por aluno para este curso?
 
 A receita total esperada é de \$11.785 e há 100 alunos. Portanto, a receita esperada por aluno é $\$11,785/100 =  \$117.85$.
 
-### Expectância
+### Experança
 
 Chamamos uma variável ou processo com um resultado numérico de __variável aleatória__, e geralmente representamos essa variável aleatória com uma letra maiúscula, como $X$, $Y$ ou $Z$. A quantidade de dinheiro que um único aluno gastará em seus livros de estatística é uma variável aleatória, e nós a representamos por $X$.
 
@@ -1760,7 +1760,7 @@ O valor esperado de uma variável aleatória representa o resultado médio. Por 
 
 Também é possível calcular o valor esperado de uma variável aleatória contínua (veja a Seção \@ref(contDist). No entanto, requer um pouco de cálculo e nós o salvamos para uma aula posterior.^[$\mu = \int xf(x)dx$ onde $f(x)$ representa uma função para a curva de densidade.]
 
-Na física, a expectância tem o mesmo significado que o centro de gravidade. A distribuição pode ser representada por uma série de pesos em cada resultado e a média representa o ponto de equilíbrio. Isso é representado nas Figuras \@ref(fig:bookCostDist) e \@ref(fig:bookWts). A ideia de um centro de gravidade também se expande para distribuições de probabilidade contínuas. Figura \@ref(fig:contBalance) mostra uma distribuição de probabilidade contínua equilibrada sobre uma cunha colocada na média.
+Na física, a esperança tem o mesmo significado que o centro de gravidade. A distribuição pode ser representada por uma série de pesos em cada resultado e a média representa o ponto de equilíbrio. Isso é representado nas Figuras \@ref(fig:bookCostDist) e \@ref(fig:bookWts). A ideia de um centro de gravidade também se expande para distribuições de probabilidade contínuas. Figura \@ref(fig:contBalance) mostra uma distribuição de probabilidade contínua equilibrada sobre uma cunha colocada na média.
 
 ```{r bookWts, fig.cap = 'Um sistema de pesos representando a distribuição de probabilidade para $X$. A corda mantém a distribuição na média para manter o sistema balanceado.'}
 library(openintro)
@@ -1842,7 +1842,7 @@ polygon(c(M - 20, M + 20, M),
 
 Suponha que você administrasse a livraria da universidade. Além de quanto receita você espera gerar, você também pode querer saber a volatilidade (variabilidade) de sua receita. 
 
-A __variância__ e __desvio padrão__ pode ser usado para descrever a variabilidade de uma variável aleatória. A Seção \@ref(variability) introduziu um método para encontrar a variância e desvio padrão para um conjunto de dados. Nós primeiro calculamos desvios da média ($x_i - \mu$), eleva ao quadrado esses desvios, e faz uma média para obter a variância. No caso de uma variável aleatória, novamente calculamos os desvios quadrados. No entanto, consideramos a soma ponderada pelas probabilidades correspondentes, exatamente como fizemos para a expectância. Essa soma ponderada de desvios quadrados é igual à variância e calculamos o desvio padrão tomando a raiz quadrada da variância, como fizemos na Seção \@ref(variability).
+A __variância__ e __desvio padrão__ pode ser usado para descrever a variabilidade de uma variável aleatória. A Seção \@ref(variability) introduziu um método para encontrar a variância e desvio padrão para um conjunto de dados. Nós primeiro calculamos desvios da média ($x_i - \mu$), eleva ao quadrado esses desvios, e faz uma média para obter a variância. No caso de uma variável aleatória, novamente calculamos os desvios quadrados. No entanto, consideramos a soma ponderada pelas probabilidades correspondentes, exatamente como fizemos para a esperança. Essa soma ponderada de desvios quadrados é igual à variância e calculamos o desvio padrão tomando a raiz quadrada da variância, como fizemos na Seção \@ref(variability).
 
 <div class="alert alert-info">
   <strong> Fórmula geral da variância: </strong> Se $X$ leva os resultados $x_1, \dots, x_k$ com probabilidades $P(X=x_1), \dots, P(X=x_k)$ e valor esperado $\mu=E(X)$, então a variância de $X$, denotada por $Var(X)$ ou o símbolo $\sigma^2$, é
@@ -1889,7 +1889,7 @@ A variação de $X$ é $\sigma^2 = 3659,3$, o que significa que o desvio padrão
 
 ***
 ```{exercise}
-A livraria também oferece um livro de química por \$159 e um complemento para o livro por \$41. A partir da experiência passada, eles sabem que cerca de 25\% de estudantes de química apenas compram o livro enquanto 60\% compram o livro e o suplemento.^[(a) 100\% - 25\% - 60\% = 15\% dos alunos não compram livros na turma. A parte (b) é representada por $y_i = [0.00, 159.00, 200.00]$, para 1 (nenhum livro), 2(livro didático) e 3 (ambos), respectivamente. E $P(Y = y_i) =  0.15, 0.25, 0.60]$. A expectância para a parte (c) é dada como o total de $y_i\times P(Y=y_i) = 159,75$. O resultado da parte (d) é a raiz quadrada da variância: $\sigma = \sqrt{Var(Y)} = \$69,28$.]
+A livraria também oferece um livro de química por \$159 e um complemento para o livro por \$41. A partir da experiência passada, eles sabem que cerca de 25\% de estudantes de química apenas compram o livro enquanto 60\% compram o livro e o suplemento.^[(a) 100\% - 25\% - 60\% = 15\% dos alunos não compram livros na turma. A parte (b) é representada por $y_i = [0.00, 159.00, 200.00]$, para 1 (nenhum livro), 2(livro didático) e 3 (ambos), respectivamente. E $P(Y = y_i) =  0.15, 0.25, 0.60]$. A esperança para a parte (c) é dada como o total de $y_i\times P(Y=y_i) = 159,75$. O resultado da parte (d) é a raiz quadrada da variância: $\sigma = \sqrt{Var(Y)} = \$69,28$.]
 
 + (a) Que proporção de estudantes não compra um dos livros? Suponha que nenhum aluno compre o suplemento sem o livro didático.
 
@@ -1927,7 +1927,7 @@ E(W) &= E(X_1 + X_2 + X_3 + X_4 + X_5) \\
 	&= 18 + 18 + 18 + 18 + 18 = 90\text{ minutos}
 \end{align*}
 
-A expectância do tempo total é igual à soma dos tempos individuais esperados. Mais geralmente, a expectância de uma soma de variáveis aleatórias é sempre a soma da expectância para cada variável aleatória.
+A esperança do tempo total é igual à soma dos tempos individuais esperados. Mais geralmente, a esperança de uma soma de variáveis aleatórias é sempre a soma da esperança para cada variável aleatória.
 
 ***
 ```{exercise, label = 'elenaIsSellingATVAndBuyingAToasterOvenAtAnAuction'}

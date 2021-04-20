@@ -1,8 +1,0 @@
-"0","ggplot(data = data.frame(x = c(-4, 4)), aes(x)) +"
-"0","  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1), size = 1)  +"
-"0","  theme(axis.title.x = element_blank(), axis.text.x = element_blank(), "
-"0","        axis.ticks.x = element_blank()) + "
-"0","  theme(axis.title.y = element_blank(), axis.text.y = element_blank(), "
-"0","        axis.ticks.y = element_blank()) + "
-"0","  theme_void () + "
-"0","  geom_hline(yintercept = -0.008)"

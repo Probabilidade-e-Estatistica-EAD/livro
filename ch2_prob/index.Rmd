@@ -974,7 +974,7 @@ knitr::kable(tab5, align = 'c',
 
 ***
 ```{exercise}
-Verifique que a Tabela \@ref(tab:FamilyCollegeDistribution) representa uma distribuição de probabilidade: os eventos são separados, todas as probabilidades são não-negativas e as probabilidades somam 1.^[Cada uma das quatro combinações de resultados é disjunta, todas as probabilidades são de fato não-negativas e a soma das probabilidades é $0.29 + 0.06 + 0.27 + 0.38 = 1.00 $.]
+Verifique que a Tabela \@ref(tab:familyCollegeDistribution) representa uma distribuição de probabilidade: os eventos são separados, todas as probabilidades são não-negativas e as probabilidades somam 1.^[Cada uma das quatro combinações de resultados é disjunta, todas as probabilidades são de fato não-negativas e a soma das probabilidades é $0.29 + 0.06 + 0.27 + 0.38 = 1.00 $.]
 ```
 
 ***

@@ -1,1 +1,0 @@
-{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"data.frame(X = seq(-2, 3, 0.01), Y = dnorm(X, 0.5, sqrt(0.5)))","line_number":0},{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"dnorm(X, 0.5, sqrt(0.5))","line_number":0}],"message":"Error in dnorm(X, 0.5, sqrt(0.5)) : object 'X' not found\n"}

@@ -1,3 +1,0 @@
-"0","x <- student.housing$price"
-"0","ggplot() + geom_histogram(aes(x), color = ""white"", fill = ""skyblue3"", bins = 17) + "
-"0","  labs(x = ""Despesas de Habitação (dólares)"", y = ""Frequência"")"

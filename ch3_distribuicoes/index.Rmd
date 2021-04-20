@@ -926,11 +926,11 @@ anim <- ggplot(tres, aes(x = obs, fill = n)) +
   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
 
 animate(anim, renderer = magick_renderer())
-anim_save("images/c3/anim.gif")
+anim_save("images/anim.gif")
 ```
 
 ```{r histn, fig.cap = "Histogramas simulados para dados normalmente distribuídos conforme o tamanho da amostra aumenta"}
-knitr::include_graphics("images/c3/anim.gif")
+knitr::include_graphics("images/anim.gif")
 ```
 
 

@@ -1,0 +1,8 @@
+base
+ggplot2
+gridExtra
+knitr
+qqplotr
+gganimate
+magick
+openintro
